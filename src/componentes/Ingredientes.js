@@ -15,13 +15,16 @@ function Card({ name, imageSrc, frontContent, backContent }) {
     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
     cursor: 'pointer',
     transition: 'transform 0.5s, box-shadow 0.3s',
-    margin: '10px', // Add margin to create space between cards
+    margin: '5px', // Add margin to create space between cards
+   
+    border: '1px solid black', // Agrega un borde negro
   };
 
   const hoverCardStyles = {
     ...cardStyles,
     boxShadow: '0 8px 16px rgba(0, 0, 0, 0.3)',
-    transform: 'scale(0.95)', // Scale down slightly on hover
+    
+    transform: 'scale(0.95)',
   };
 
   const innerStyles = {
@@ -453,7 +456,7 @@ function Grid() {
         )}
       />
 
-      
+
     </div>
   );
 }
