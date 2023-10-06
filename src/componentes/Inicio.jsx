@@ -14,18 +14,29 @@ const imageContainerStyle = {
   height: '250px',
   objectFit: 'cover',
 };
+
 const recetaDestacada1 = {
   id: 1,
   nombre: 'Tacos Chapines',
-  descripcion: 'Delicioso y faciles de hacer',
+  descripcion: 'Deliciosos y fáciles de hacer',
   imagenSrc: tacos,
 };
+
+const welcomeTextStyle = {
+  fontSize: '36px',
+  textAlign: 'center',
+  padding: '20px',
+  transition: 'color 0.3s ease-in-out',
+  background: 'rgba(0, 0, 0, 0.5)', // Fondo con transparencia
+  color: '#fff', // Color del texto
+};
+
 
 function Inicio() {
   return (
     <div className="home-page">
       <header>
-        <h1>BIENVENIDO A LA COCINA CREATIVA</h1>
+        <h1 style={welcomeTextStyle}>BIENVENIDO A LA COCINA CREATIVA</h1>
         <section className="carousel-section">
           <Carousel
             showArrows={true}
@@ -56,10 +67,10 @@ function Inicio() {
       </header>
 
       <section className="featured-recipes">
-      <h2>Recetas Destacadas</h2>
-      <div className="receta-cards">
-      <RecetaCard receta={recetaDestacada1} />
-      </div>
+        <h2>Recetas Destacadas</h2>
+        <div className="receta-cards">
+          <RecetaCard receta={recetaDestacada1} />
+        </div>
       </section>
 
       <section className="popular-recipes">
@@ -90,4 +101,3 @@ function Inicio() {
 }
 
 export default Inicio;
-
