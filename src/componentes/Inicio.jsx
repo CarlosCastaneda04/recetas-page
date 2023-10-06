@@ -5,6 +5,8 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import imagen1 from '../img/imagen1.png';
 import imagen2 from '../img/imagen2.png';
 import tacos from '../img/tacosgt.jpg';
+import coditos from '../img/CoditosConRaja.png';
+import burger from '../img/hamburguesa.png';
 
 import './styles.css';
 import RecetaCard from './RecetaCard';
@@ -21,6 +23,21 @@ const recetaDestacada1 = {
   descripcion: 'Deliciosos y fáciles de hacer',
   imagenSrc: tacos,
 };
+
+const recetasPopulares = [
+  {
+    id: 2,
+    nombre: 'CODITOS CON RAJA',
+    descripcion: 'Una mezcla que no todos conocen, pero que es deliciosa, es la del chile poblano con pasta.',
+    imagenSrc: coditos,
+  },
+  {
+    id: 3,
+    nombre: 'HAMBURGUESA GIGANTE',
+    descripcion: 'Para ese antojo voraz, te compartimos esta espectacular receta de hamburguesa gigante, la cual está elaborada con la mejor selección de Picaña de cerdo Proan, diferentes quesos y papas fritas, ¡no olvides acompañar con aros de cebolla!',
+    imagenSrc: burger,
+  },
+];
 
 const welcomeTextStyle = {
   fontSize: '36px',
@@ -75,11 +92,22 @@ function Inicio() {
 
       <section className="popular-recipes">
         <h2>Recetas Populares</h2>
-        {/* 
-          Aquí puedes mostrar imágenes y enlaces a recetas populares.
-          Puedes usar componentes de tarjeta (Card) para mostrar las recetas.
-          Por ejemplo, puedes crear una lista de tarjetas de recetas.
-        */}
+        <div className="receta-cards">
+          <Carousel
+            showArrows={true}
+            infiniteLoop={true}
+            centerMode={true}
+            centerSlidePercentage={60}
+            autoPlay={true}
+            interval={5000}
+          >
+            {recetasPopulares.map((receta) => (
+              <div key={receta.id}>
+                <RecetaCard receta={receta} />
+              </div>
+            ))}
+          </Carousel>
+        </div>
       </section>
 
       <section className="newsletter">
