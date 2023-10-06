@@ -4,11 +4,7 @@ import pastap from '../img/pastap.jpg';
 import receta1 from '../img/facil 1.png';
 import receta2 from '../img/facil 2.png';
 import receta3 from '../img/facil 3.png';
-import receta4 from '../img/camarones.png';
-import receta5 from '../img/capeado.png';
-import receta6 from '../img/hamburguesa.png';
-import receta7 from '../img/pastap.jpg';
-import receta8 from '../img/polloMostaza.png';
+
 
 //un comentario
 
