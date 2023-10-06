@@ -74,7 +74,7 @@ function Card({ recipe }) {
       <div style={innerStyles}>
         <div style={frontStyles}>
           {/* Content for the front of the card */}
-          <img src={recipe.imageSrc} alt={recipe.name} width="70%" height="70%" />
+          <img src={recipe.imageSrc} alt={recipe.name} width="60%" height="60%" />
           <h3>{recipe.name}</h3>
           <p> {recipe.ingredients.join(', ')}</p>
         </div>
