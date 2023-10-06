@@ -26,6 +26,8 @@ h1 {
     width: 100%;
     height: 100%;
     overflow: hidden;
+    margin: 0 !important;
+    padding: 0;
   }
   
   .background-gif {
@@ -36,7 +38,7 @@ h1 {
   }
 
   .sobre-nosotros-container {
-    /* Asegúrate de que ocupe el 100% del alto y ancho de la ventana */
+    position: relative;
     width: 100%;
     height: 100vh; /* 100% del alto de la ventana */
     background-size: cover;
@@ -45,11 +47,23 @@ h1 {
     /* Otros estilos necesarios */
   }
   .sobre-nosotros-content {
-    color: white; /* Cambia el color de la letra a blanco */
+    color: rgb(255, 255, 255); /* Cambia el color de la letra a blanco */
   }
   
   .sobre-nosotros-content p {
     margin-bottom: 50px; /* Aumenta el espacio entre los párrafos */
   }
+
+  .sobre-nosotros-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Cambia el valor de alfa (el último número) para ajustar la opacidad */
+    z-index: -1; /* Asegura que esta capa esté detrás de otros elementos */
+  }
+  
   
   
