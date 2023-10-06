@@ -127,7 +127,7 @@ function Navbar() {
             <Link to="/ingredientes">Ingredientes</Link>
           </li>
           <li>
-            <Link to="/Sobre Nosotros">Sobre Nosotros</Link>
+            <Link to="/SobreNosotros">Sobre Nosotros</Link>
           </li>
         </NavLinks>
       </NavContainer>
