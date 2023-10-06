@@ -7,6 +7,8 @@ import Ingredientes from './componentes/Ingredientes';
 import Recetas from './componentes/Recetas';
 import Receta from './componentes/Receta';
 import Nostros from './componentes/SobreNosotros';
+import Faciles from './componentes/RecetasFaciles';
+
 
 
 import './App.css';
@@ -22,6 +24,7 @@ function App() {
           <Route path="/Recetas" element={<Recetas />} />
           <Route path="/recetas/:id" component={Receta} />
           <Route path="/SobreNosotros" element={<Nostros/>} />
+          <Route path="/RecetasFaciles" element={<Faciles/>} />
         </Routes> {}
       </div>
     </Router>
