@@ -4,20 +4,30 @@ import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import imagen1 from '../img/imagen1.png';
 import imagen2 from '../img/imagen2.png';
+import tacos from '../img/tacosgt.jpg';
+
+import './styles.css';
+import RecetaCard from './RecetaCard';
 
 const imageContainerStyle = {
-  maxWidth: '100%', /* Ajusta el ancho máximo al 100% para que las imágenes no se desborden */
-  height: '250px', /* Permite que la altura se ajuste automáticamente según el ancho */
-  objectFit: 'cover', /* Recorta y mantiene la relación de aspecto */
+  maxWidth: '100%',
+  height: '250px',
+  objectFit: 'cover',
+};
+const recetaDestacada1 = {
+  id: 1,
+  nombre: 'Tacos Chapines',
+  descripcion: 'Delicioso y faciles de hacer',
+  imagenSrc: tacos,
 };
 
 function Inicio() {
   return (
     <div className="home-page">
       <header>
-        <h1>Bienvenido a La Cocina Creativa</h1>
+        <h1>BIENVENIDO A LA COCINA CREATIVA</h1>
         <section className="carousel-section">
-        <Carousel
+          <Carousel
             showArrows={true}
             infiniteLoop={true}
             centerMode={true}
@@ -41,18 +51,24 @@ function Inicio() {
         </section>
         <p>Explora recetas deliciosas y sorprende a tu paladar.</p>
         <Link to="/recetas">
-          <button className="cta-button">Explora Recetas</button>
+          <button className="button">Explora Recetas</button>
         </Link>
       </header>
 
       <section className="featured-recipes">
-        <h2>Recetas Destacadas</h2>
-        {/* Aquí puedes mostrar imágenes y enlaces a recetas destacadas */}
+      <h2>Recetas Destacadas</h2>
+      <div className="receta-cards">
+      <RecetaCard receta={recetaDestacada1} />
+      </div>
       </section>
 
       <section className="popular-recipes">
         <h2>Recetas Populares</h2>
-        {/* Aquí puedes mostrar imágenes y enlaces a recetas populares */}
+        {/* 
+          Aquí puedes mostrar imágenes y enlaces a recetas populares.
+          Puedes usar componentes de tarjeta (Card) para mostrar las recetas.
+          Por ejemplo, puedes crear una lista de tarjetas de recetas.
+        */}
       </section>
 
       <section className="newsletter">
@@ -64,10 +80,14 @@ function Inicio() {
 
       <section className="testimonials">
         <h2>Lo que dicen nuestros usuarios</h2>
-        {/* Aquí puedes mostrar testimonios de usuarios */}
+        {/* 
+          Aquí puedes mostrar testimonios de usuarios.
+          Por ejemplo, puedes crear una lista de testimonios.
+        */}
       </section>
     </div>
   );
 }
 
 export default Inicio;
+

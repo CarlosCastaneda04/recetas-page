@@ -49,7 +49,7 @@ const NavLinks = styled.ul`
       transition: color 0.3s ease;
 
       &:hover {
-        color: #e8706e; /* Cambia el color destacado al pasar el ratón */
+        color: #e8706e; 
       }
     }
     ul {
@@ -126,7 +126,9 @@ function Navbar() {
           <li>
             <Link to="/ingredientes">Ingredientes</Link>
           </li>
-          {/* ... Agrega más enlaces según sea necesario */}
+          <li>
+            <Link to="/Sobre Nosotros">Sobre Nosotros</Link>
+          </li>
         </NavLinks>
       </NavContainer>
     </StyledNavbar>

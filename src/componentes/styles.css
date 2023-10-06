@@ -1,0 +1,21 @@
+h1 {
+    font-family: 'Bebas Neue', sans-serif; /* Asegúrate de que el nombre sea exactamente 'Bebas Neue' */
+  }
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #252B48; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .button:hover {
+    background-color: #2980b9; /* Color de fondo al pasar el mouse */
+    transform: scale(1.05); /* Efecto de escala al pasar el mouse */
+  }
+  
