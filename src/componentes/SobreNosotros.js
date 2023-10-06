@@ -5,15 +5,17 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 function SobreNosotros() {
-  const backgroundStyle = {
-    backgroundImage: `url(${fondoGif})`, // Usa el GIF como fondo
+  const containerStyle = {
+    backgroundImage: `url(${fondoGif})`, 
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
+    paddingTop: '100px', 
+    color: 'white', 
   };
 
   return (
-    <div className="sobre-nosotros-container" style={backgroundStyle}>
+    <div className="sobre-nosotros-container" style={containerStyle}>
       <div className="sobre-nosotros-content">
         <h2>Sobre Nosotros</h2>
         <p>
@@ -34,7 +36,6 @@ function SobreNosotros() {
           recetas y que te animes a compartir tus propias creaciones con nosotros!
         </p>
 
-        {/* Elementos adicionales */}
         <div className="contact-info">
           <h3>Contacto</h3>
           <p>
@@ -44,17 +45,16 @@ function SobreNosotros() {
         </div>
 
         <div className="follow-us">
-    <h3>Síguenos en Redes Sociales</h3>
-    {/* Agrega enlaces a tus redes sociales */}
-    <div className="social-icons">
-      <a href="#" className="social-icon">
-        <FontAwesomeIcon icon={faFacebook} />
-      </a>
-      <a href="#" className="social-icon">
-        <FontAwesomeIcon icon={faInstagram} />
-      </a>
-    </div>
-  </div>
+          <h3>Síguenos en Redes Sociales</h3>
+          <div className="social-icons">
+            <a href="/" className="social-icon">
+              <FontAwesomeIcon icon={faFacebook} />
+            </a>
+            <a href="/" className="social-icon">
+              <FontAwesomeIcon icon={faInstagram} />
+            </a>
+          </div>
+        </div>
       </div>
       <footer className="footer">
         <p>&copy; 2023 La Cocina Creativa</p>
