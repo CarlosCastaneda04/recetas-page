@@ -10,7 +10,7 @@ import receta6 from '../img/hamburguesa.png';
 import receta7 from '../img/pastap.jpg';
 import receta8 from '../img/polloMostaza.png';
 
-
+//un comentario
 
 
 
