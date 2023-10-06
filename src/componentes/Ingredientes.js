@@ -89,7 +89,7 @@ function Card({ name, imageSrc, frontContent, backContent }) {
     </div>
   );
 }
-
+ //hola :)
 function Grid() {
   const numRows = 5; // Change the number of rows
   const numCols = 5; // Change the number of columns
