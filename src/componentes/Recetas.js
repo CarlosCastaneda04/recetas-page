@@ -1,6 +1,17 @@
 import React, { useState } from 'react';
 import tacos from '../img/tacosgt.jpg';
 import pastap from '../img/pastap.jpg';
+import receta1 from '../img/CoditosConRaja.png';
+import receta2 from '../img/FlautasDivorciadas.png';
+import receta3 from '../img/PolloNaranja.png';
+import receta4 from '../img/camarones.png';
+import receta5 from '../img/capeado.png';
+import receta6 from '../img/hamburguesa.png';
+import receta7 from '../img/pastap.jpg';
+import receta8 from '../img/polloMostaza.png';
+
+//un comentario
+
 
 
 function Card({ recipe }) {
@@ -67,9 +78,9 @@ function Card({ recipe }) {
       <div style={innerStyles}>
         <div style={frontStyles}>
           {/* Content for the front of the card */}
-          <img src={recipe.imageSrc} alt={recipe.name} width="80%" height="80%" />
+          <img src={recipe.imageSrc} alt={recipe.name} width="70%" height="70%" />
           <h3>{recipe.name}</h3>
-          <p>Ingredients: {recipe.ingredients.join(', ')}</p>
+          <p> {recipe.ingredients.join(', ')}</p>
         </div>
         <div style={backStyles}>
           {/* Content for the back of the card */}
@@ -88,15 +99,45 @@ function Card({ recipe }) {
 function Grid() {
   const recipes = [
     {
-      name: 'Tacos chapines',
-      imageSrc: tacos,
-      ingredients: ['Ingredient 1', 'Ingredient 2', 'Ingredient 3'],
+      name: 'CODITOS CON RAJA',
+      imageSrc: receta1,
+      ingredients: ['Una mezcla que no todos conocen, pero que es deliciosa, es la del chile poblano con pasta. Si estás pensando en qué hacer de comer para tu familia,  estos coditos con rajas les van a fascinar.'],
       instructions: ['Step 1: Do something', 'Step 2: Do something else'],
     },
     {
-      name: 'penne ',
-      imageSrc: pastap,
-      ingredients: ['Ingredient 4', 'Ingredient 5', 'Ingredient 6'],
+      name: 'FLAUTAS DIVORCIADAS ',
+      imageSrc: receta2,
+      ingredients: ['Dentro de la comida mexicana, las flautas son hermanas de los tacos dorados de pollo, pues son muy similares, pero se preparan con unas tortillas de maíz alargadas. Se pueden rellenar con pollo, papa, res o algún guisado. Se decoran con queso, crema, lechuga y salsa.'],
+      instructions: ['Step 1: Do another thing', 'Step 2: Do one more thing'],
+    },{
+      name: 'POLLO A LA NARANJA ',
+      imageSrc: receta3,
+      ingredients: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'],
+      instructions: ['Step 1: Do another thing', 'Step 2: Do one more thing'],
+    },{
+      name: 'CAMARONES AL COCOn ',
+      imageSrc: receta4,
+      ingredients: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'],
+      instructions: ['Step 1: Do another thing', 'Step 2: Do one more thing'],
+    },{
+      name: 'CHILE CAPEADO ',
+      imageSrc: receta5,
+      ingredients: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'],
+      instructions: ['Step 1: Do another thing', 'Step 2: Do one more thing'],
+    },{
+      name: 'HAMBURGUESA GIGANTE ',
+      imageSrc: receta6,
+      ingredients: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'],
+      instructions: ['Step 1: Do another thing', 'Step 2: Do one more thing'],
+    },{
+      name: 'PASTA PENNE ',
+      imageSrc: receta7,
+      ingredients: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'],
+      instructions: ['Step 1: Do another thing', 'Step 2: Do one more thing'],
+    },{
+      name: 'POLLO A LA MOSTAZA ',
+      imageSrc: receta8,
+      ingredients: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'],
       instructions: ['Step 1: Do another thing', 'Step 2: Do one more thing'],
     },
     // Add more recipes as needed
