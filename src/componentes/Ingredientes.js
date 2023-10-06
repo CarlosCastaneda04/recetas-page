@@ -17,7 +17,7 @@ function Card({ name, imageSrc, frontContent, backContent }) {
     transition: 'transform 0.5s, box-shadow 0.3s',
     margin: '5px', // Add margin to create space between cards
    
-    border: '1px solid black', // Agrega un borde negro
+    border: '1px solid #252B48', // Agrega un borde negro
   };
 
   const hoverCardStyles = {
@@ -99,9 +99,16 @@ function Grid() {
     gridTemplateRows: `repeat(${numRows}, 1fr)`, // Adjust the number of rows
     gridTemplateColumns: `repeat(${numCols}, 1fr)`, // Adjust the number of columns
     gap: '10px', // Add gap between grid items
+
+    display: 'grid',
+    gridTemplateColumns: `repeat(${numCols}, 1fr)`, // Ajusta el número de columnas
+    gap: '10px', // Agrega espacio entre las tarjetas
   };
 
+
   return (
+
+    
     <div style={gridStyles}>
       <Card
         name="Card 1"
