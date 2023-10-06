@@ -10,11 +10,25 @@ function SobreNosotros() {
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
+    
   };
 
+  
+
   return (
+
+    
     <div className="sobre-nosotros-container" style={backgroundStyle}>
       <div className="sobre-nosotros-content">
+
+      <style>{`
+        body {
+          margin: 0;
+          padding: 0;
+        }
+      `}</style>
+
+
         <h2>Sobre Nosotros</h2>
         <p>
           Bienvenido a La Cocina Creativa, tu fuente de inspiración culinaria.

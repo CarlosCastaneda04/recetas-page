@@ -10,7 +10,7 @@ import receta6 from '../img/hamburguesa.png';
 import receta7 from '../img/pastap.jpg';
 import receta8 from '../img/polloMostaza.png';
 
-//un comentario
+//un comentario  
 
 
 
@@ -21,6 +21,12 @@ function Card({ recipe }) {
     setIsFlipped(!isFlipped);
   };
 
+
+
+
+
+
+
   const cardStyles = {
     perspective: '1000px',
     width: '1000px', // Adjust card width
@@ -30,6 +36,7 @@ function Card({ recipe }) {
     cursor: 'pointer',
     transition: 'transform 0.5s, box-shadow 0.3s',
     margin: '10px', // Add margin to create space between cards
+    border: '1px solid #252B48',
   };
 
   const hoverCardStyles = {
@@ -54,8 +61,9 @@ function Card({ recipe }) {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#f3f3f3',
+    backgroundColor: 'white',
     borderRadius: '10px',
+
     flexDirection: 'column',
   };
 
@@ -67,13 +75,22 @@ function Card({ recipe }) {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#e0e0e0',
+    backgroundColor: '#252B48',
     borderRadius: '10px',
     transform: 'rotateY(180deg)',
+    color: 'white',
+    padding: '10px',
+
     flexDirection: 'column',
   };
 
+ 
+
   return (
+
+    
+
+
     <div style={isFlipped ? hoverCardStyles : cardStyles} onClick={handleFlip}>
       <div style={innerStyles}>
         <div style={frontStyles}>

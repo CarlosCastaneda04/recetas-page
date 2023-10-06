@@ -103,7 +103,10 @@ function Navbar() {
     <StyledNavbar>
       <NavContainer>
         <LogoContainer>
-          <LogoImage src={Logo} alt="Logo de La Cocina Creativa" />
+          {/* Agregamos un enlace al logo que lleva al inicio */}
+          <Link to="/">
+            <LogoImage src={Logo} alt="Logo de La Cocina Creativa" />
+          </Link>
           <SalonName>La Cocina Creativa</SalonName>
         </LogoContainer>
         <MenuIcon onClick={toggleMenu}>☰</MenuIcon>
@@ -133,6 +136,7 @@ function Navbar() {
       </NavContainer>
     </StyledNavbar>
   );
+  
 }
 
 
