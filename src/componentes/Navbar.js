@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import Logo from '../img/cocinacreativa.png'; // Importa la ruta de la imagen de tu logotipo
-
 const StyledNavbar = styled.nav`
   background-color: #252B48;
   color: #fff;
@@ -118,7 +117,7 @@ function Navbar() {
             <Link to="/recetas">Recetas</Link>
             <ul>
               <li>
-                <Link to="/recetas/faciles">Fáciles</Link>
+                <Link to="/RecetasFaciles">Fáciles</Link>
               </li>
               <li>
                 <Link to="/recetas/menos-de-30-minutos">Menos de 30 minutos</Link>
