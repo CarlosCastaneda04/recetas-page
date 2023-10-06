@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import fondoGif from '../img/fondo.gif'; // Asegúrate de tener la ruta correcta al archivo GIF de fondo
 import imagen1 from '../img/imagen1.png';
 import imagen2 from '../img/imagen2.png';
 import tacos from '../img/tacosgt.jpg';
@@ -14,18 +15,37 @@ const imageContainerStyle = {
   height: '250px',
   objectFit: 'cover',
 };
+
 const recetaDestacada1 = {
   id: 1,
   nombre: 'Tacos Chapines',
-  descripcion: 'Delicioso y faciles de hacer',
+  descripcion: 'Deliciosos y fáciles de hacer',
   imagenSrc: tacos,
+};
+
+const welcomeTextStyle = {
+  fontSize: '36px',
+  textAlign: 'center',
+  padding: '20px',
+  transition: 'color 0.3s ease-in-out',
+  background: 'rgba(0, 0, 0, 0.5)', // Fondo con transparencia
+  color: '#fff', // Color del texto
+};
+
+const backgroundStyle = {
+  backgroundImage: `url(${fondoGif})`,
+  backgroundSize: 'cover',
+  backgroundPosition: 'center',
+  backgroundRepeat: 'no-repeat',
+  minHeight: `calc(100vh - 60px)`, // Ajusta la altura según la altura de tu barra de navegación
+  position: 'relative', // Necesario para aplicar el difuminado solo alrededor del texto
 };
 
 function Inicio() {
   return (
-    <div className="home-page">
+    <div className="home-page" style={backgroundStyle}>
       <header>
-        <h1>BIENVENIDO A LA COCINA CREATIVA</h1>
+        <h1 style={welcomeTextStyle}>BIENVENIDO A LA COCINA CREATIVA</h1>
         <section className="carousel-section">
           <Carousel
             showArrows={true}
@@ -56,10 +76,10 @@ function Inicio() {
       </header>
 
       <section className="featured-recipes">
-      <h2>Recetas Destacadas</h2>
-      <div className="receta-cards">
-      <RecetaCard receta={recetaDestacada1} />
-      </div>
+        <h2>Recetas Destacadas</h2>
+        <div className="receta-cards">
+          <RecetaCard receta={recetaDestacada1} />
+        </div>
       </section>
 
       <section className="popular-recipes">
@@ -90,4 +110,3 @@ function Inicio() {
 }
 
 export default Inicio;
-
