@@ -115,7 +115,7 @@ function Grid() {
       ingredients: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'],
       instructions: ['Step 1: Do another thing', 'Step 2: Do one more thing'],
     },{
-      name: 'CAMARONES AL COCO ',
+      name: 'CAMARONES AL COCOn ',
       imageSrc: receta4,
       ingredients: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'],
       instructions: ['Step 1: Do another thing', 'Step 2: Do one more thing'],
