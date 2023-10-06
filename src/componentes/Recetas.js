@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import tacos from '../img/tacosgt.jpg';
-import pastap from '../img/pastap.jpg';
 import receta1 from '../img/CoditosConRaja.png';
 import receta2 from '../img/FlautasDivorciadas.png';
 import receta3 from '../img/PolloNaranja.png';
