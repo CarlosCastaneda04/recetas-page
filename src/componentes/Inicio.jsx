@@ -1,53 +1,54 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import imagen1 from '../img/imagen1.png';
-import imagen2 from '../img/imagen2.png';
-import tacos from '../img/tacosgt.jpg';
-import coditos from '../img/CoditosConRaja.png';
-import burger from '../img/hamburguesa.png';
+import React from "react";
+import { Link } from "react-router-dom";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import imagen1 from "../img/imagen1.png";
+import imagen2 from "../img/imagen2.png";
+import tacos from "../img/tacosgt.jpg";
+import coditos from "../img/CoditosConRaja.png";
+import burger from "../img/hamburguesa.png";
 
-import './styles.css';
-import RecetaCard from './RecetaCard';
+import "./styles.css";
+import RecetaCard from "./RecetaCard";
 
 const imageContainerStyle = {
-  maxWidth: '100%',
-  height: '250px',
-  objectFit: 'cover',
+  maxWidth: "100%",
+  height: "250px",
+  objectFit: "cover",
 };
 
 const recetaDestacada1 = {
   id: 1,
-  nombre: 'Tacos Chapines',
-  descripcion: 'Deliciosos y fáciles de hacer',
+  nombre: "Tacos Chapines",
+  descripcion: "Deliciosos y fáciles de hacer",
   imagenSrc: tacos,
 };
 
 const recetasPopulares = [
   {
     id: 2,
-    nombre: 'CODITOS CON RAJA',
-    descripcion: 'Una mezcla que no todos conocen, pero que es deliciosa, es la del chile poblano con pasta.',
+    nombre: "CODITOS CON RAJA",
+    descripcion:
+      "Una mezcla que no todos conocen, pero que es deliciosa, es la del chile poblano con pasta.",
     imagenSrc: coditos,
   },
   {
     id: 3,
-    nombre: 'HAMBURGUESA GIGANTE',
-    descripcion: 'Para ese antojo voraz, te compartimos esta espectacular receta de hamburguesa gigante, la cual está elaborada con la mejor selección de Picaña de cerdo Proan, diferentes quesos y papas fritas, ¡no olvides acompañar con aros de cebolla!',
+    nombre: "HAMBURGUESA GIGANTE",
+    descripcion:
+      "Para ese antojo voraz, te compartimos esta espectacular receta de hamburguesa gigante, la cual está elaborada con la mejor selección de Picaña de cerdo Proan, diferentes quesos y papas fritas, ¡no olvides acompañar con aros de cebolla!",
     imagenSrc: burger,
   },
 ];
 
 const welcomeTextStyle = {
-  fontSize: '36px',
-  textAlign: 'center',
-  padding: '20px',
-  transition: 'color 0.3s ease-in-out',
-  background: 'rgba(0, 0, 0, 0.5)', // Fondo con transparencia
-  color: '#fff', // Color del texto
+  fontSize: "36px",
+  textAlign: "center",
+  padding: "20px",
+  transition: "color 0.3s ease-in-out",
+  background: "rgba(0, 0, 0, 0.5)", // Fondo con transparencia
+  color: "#fff", // Color del texto
 };
-
 
 function Inicio() {
   return (
@@ -120,6 +121,7 @@ function Inicio() {
       <section className="testimonials">
         <h2>Lo que dicen nuestros usuarios</h2>
         {/* 
+        
           Aquí puedes mostrar testimonios de usuarios.
           Por ejemplo, puedes crear una lista de testimonios.
         */}
