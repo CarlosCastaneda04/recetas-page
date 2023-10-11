@@ -11,6 +11,13 @@ import burger from "../img/hamburguesa.png";
 import "./styles.css";
 import RecetaCard from "./RecetaCard";
 
+function scrollToTop(){
+  window.scrollTo({
+    top:0,
+    behavior:"smooth"
+  })
+}
+
 const imageContainerStyle = {
   maxWidth: "100%",
   height: "250px",
@@ -54,6 +61,9 @@ function Inicio() {
   return (
     <div className="home-page">
       <header>
+        <button onClick={scrollToTop}className="scroll-to-top-button">
+          IR ARRIBA
+        </button>
         <h1 style={welcomeTextStyle}>BIENVENIDO A LA COCINA CREATIVA</h1>
         <section className="carousel-section">
           <Carousel

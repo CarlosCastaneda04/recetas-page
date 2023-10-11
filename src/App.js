@@ -8,6 +8,7 @@ import Recetas from './componentes/Recetas';
 import Receta from './componentes/Receta';
 import Nostros from './componentes/SobreNosotros';
 import Faciles from './componentes/RecetasFaciles';
+import MasRapido from './componentes/MasRapido';
 
 
 
@@ -25,6 +26,8 @@ function App() {
           <Route path="/recetas/:id" component={Receta} />
           <Route path="/SobreNosotros" element={<Nostros/>} />
           <Route path="/RecetasFaciles" element={<Faciles/>} />
+          <Route path="/MasRapido" element={<MasRapido/>} />
+
         </Routes> {}
       </div>
     </Router>

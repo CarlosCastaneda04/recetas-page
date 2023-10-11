@@ -120,7 +120,7 @@ function Navbar() {
                 <Link to="/RecetasFaciles">Fáciles</Link>
               </li>
               <li>
-                <Link to="/recetas/menos-de-30-minutos">Menos de 30 minutos</Link>
+                <Link to="/MasRapido">Menos de 30 minutos</Link>
               </li>
               {/* ... Agrega más enlaces según sea necesario */}
             </ul>
